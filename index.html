@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>password</title>
+     <link rel="shortcut icon" href="../razorpay/images/core-features-sectionBg.svg" type="image/x-icon">
+     <link rel="stylesheet" href="./index.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+</head>
+
+<body class="wrapper">
+     <div class="container">
+          <h1 class="heading">PASSWORD GENERATOR</h1>
+          <div class="createpasswordplace">
+               <input id="password-bngya" type="text" value="PASSWORD" password-bngya readonly>
+
+               <button class="copyIcon">
+
+                    <span class="copytext" copydone></span>
+
+                    <img src="copy.svg" width="25px" height="25px" alt="" copyIcon>
+               </button>
+
+          </div>
+          <div class="content">
+               <div class="Passwordinfo">
+                    <p>Password Length</p>
+                    <span passwordlengthvalue>0</span>
+               </div>
+               <div>
+                    <input type="range" min="1" max="20" value="10" step="1" class="myRange">
+               </div>
+               <div>
+                    <div class="checkbox"><input type="checkbox" id="uppercase">
+                         <label for="uppercase">Include
+                              Uppercase
+                              Letters</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="lowercase"><label for="lowercase">Include Lowercase
+                              Letters</label></div>
+                    <div class="checkbox"><input type="checkbox" id="numbers"><label for="numbers">Include
+                              Numbers</label></div>
+                    <div class="checkbox"><input type="checkbox" id="symbols"><label for="symbols">Include
+                              symbols</label></div>
+               </div>
+               <div class="strengthwaladiv">
+                    <p>Strength</p>
+                    <div class="indicator"></div>
+               </div>
+               <button class="generatebtn" onclick="generatePassword()">Generate Password</button>
+
+          </div>
+     </div>
+
+     <script src="index.js"></script>
+</body>
+
+</html>
